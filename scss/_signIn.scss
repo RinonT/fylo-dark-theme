@@ -1,0 +1,36 @@
+@import "mixins";
+.signIn_section {
+  background-color: hsl(219, 30%, 18%);
+  margin-top: 150px;
+  padding: 16px;
+  padding-top: 40px;
+  padding-bottom: 32px;
+  border-radius: 5px;
+
+  .signIn_section__heading {
+    margin-bottom: 32px;
+}
+
+  .singIn_form {
+      label, .button_container {
+        @include flex-column;
+      }
+
+      input { 
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            margin-top: 40px;
+            padding: 16px 32px 16px 32px; 
+            border-color: transparent;
+            outline: none;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+      }
+
+      
+  }
+}

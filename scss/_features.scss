@@ -28,24 +28,6 @@
             font-size: 22px;
         }
     }
-
-    .start_btn {
-        font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        margin-top: 40px;
-        padding: 16px 65px 16px 65px;
-        color: hsl(0, 0%, 100%);
-        background-color: hsl(198, 60%, 50%);
-        border-color: transparent;
-        outline: none;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
-    }
-
     .features_section__article:last-of-type {
         padding-top: 100px;
         padding-bottom: 200px;
@@ -67,4 +49,20 @@
             text-decoration: underline;
         }
     }
+}
+.start_btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 16px 65px 16px 65px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(198, 60%, 50%);
+    border-color: transparent;
+    outline: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }

@@ -1,0 +1,52 @@
+@import "mixins";
+
+footer {
+    .footer_heading {
+        margin-bottom: 40px;
+    }
+    .footer_container {
+        padding: 100px 32px 32px 32px;
+    }
+
+    .footer_article {
+        @include flex-row;
+        column-gap: 32px;
+
+        .image_container {
+            margin-top: 4px;
+        }
+
+        .footer_photograph {
+            flex-basis: 90%;
+        }
+
+    }
+    .phone_contact {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        svg {
+            margin-right: 16px;
+        }
+    }
+
+    .email_contact {
+        svg {
+            margin-right: 16px;
+        }
+    }
+
+    .footer_nav {
+        margin-top: 80px;
+    }
+
+    .footer_list {
+        a {
+            color: hsl(0, 0%, 100%);;
+        }
+        margin-bottom: 16px;
+    }
+
+    .footer_nav__list:last-of-type {
+        margin-top: 50px;
+    }
+}
