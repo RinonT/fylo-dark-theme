@@ -1,0 +1,70 @@
+.features_section {
+    .features_section__article:not(:last-of-type) {
+        text-align: center;
+        padding-bottom: 120px;
+    }
+
+    .features_section__heading {
+        line-height: 35px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    @media (min-width: 500px) {
+        .illustration_article {
+            .image_container {
+                img {
+                    max-width: 85%;
+                }
+            }
+        }
+    }
+
+    .text_container {
+        padding-top: 16px;
+    }
+    .features_section__article:not(:nth-of-type(1)) {
+        .features_section__heading {
+            font-size: 22px;
+        }
+    }
+
+    .start_btn {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 40px;
+        padding: 16px 65px 16px 65px;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(198, 60%, 50%);
+        border-color: transparent;
+        outline: none;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+
+    .features_section__article:last-of-type {
+        padding-top: 100px;
+        padding-bottom: 200px;
+
+        @media (min-width: 500px) {
+            .image_container {
+                img {
+                    max-width: 85%;
+                }
+            }
+        }
+
+        .features_section__paragraph {
+            margin-bottom: 32px;
+        }
+
+        .see_howfyloworks {
+            color: hsl(176, 68%, 64%);
+            text-decoration: underline;
+        }
+    }
+}
