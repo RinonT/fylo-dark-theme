@@ -40,6 +40,13 @@ img {
   line-height: 25px;
   opacity: .83; }
 
+@media (min-width: 1114px) {
+  .main_container,
+  .footer_container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto; } }
+
 header .header_container {
   padding: 32px; }
 
@@ -59,6 +66,12 @@ header .header_link {
 header .header_link:hover {
   text-decoration: underline;
   opacity: 1; }
+
+@media (min-width: 1114px) {
+  header .header_container {
+    padding: 48px; }
+  header .header_nav {
+    flex-basis: 30%; } }
 
 .features_section .features_section__article:not(:last-of-type) {
   text-align: center;
@@ -90,6 +103,48 @@ header .header_link:hover {
   .features_section .features_section__article:last-of-type .see_howfyloworks {
     color: #65e2d9;
     text-decoration: underline; }
+
+@media (min-width: 1114px) {
+  .features_section .features_section__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "article1 article1" "article2 article3" "article4 article5" "article6 article6";
+    column-gap: 10%; }
+  .features_section article:nth-of-type(1) {
+    grid-area: article1; }
+  .features_section article:nth-of-type(2) {
+    grid-area: article2; }
+  .features_section article:nth-of-type(3) {
+    grid-area: article3; }
+  .features_section article:nth-of-type(4) {
+    grid-area: article4; }
+  .features_section article:nth-of-type(5) {
+    grid-area: article5; }
+  .features_section article:nth-of-type(6) {
+    grid-area: article6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .features_section article:nth-of-type(6) .image_container {
+      flex-basis: 75%; }
+  .features_section .illustration_article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .features_section .illustration_article .image_container,
+    .features_section .illustration_article .text_container,
+    .features_section .illustration_article .button_container {
+      max-width: 600px; }
+    .features_section .illustration_article .text_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .features_section .illustration_article .image_container img {
+      max-width: 100%; }
+    .features_section .illustration_article .features_section__paragraph {
+      max-width: 500px; }
+    .features_section .illustration_article .start_btn {
+      padding: 16px 100px 16px 100px; } }
 
 .start_btn {
   font-family: "Raleway", sans-serif;

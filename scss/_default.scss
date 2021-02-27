@@ -48,3 +48,12 @@ img {
     line-height: 25px;
     opacity: .83;
 }
+
+@media(min-width: 1114px) {
+    .main_container, 
+    .footer_container {
+        max-width: 1114px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

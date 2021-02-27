@@ -22,4 +22,15 @@ header {
         text-decoration: underline;
         opacity: 1;
     }
+
+    @media(min-width: 1114px) {
+        .header_container {
+            padding: 48px;
+        }
+
+        .header_nav {
+            flex-basis: 30%;
+        }
+    
+    }
 }
