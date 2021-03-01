@@ -21,7 +21,7 @@
             font-weight: 700;
             font-size: 14px;
             margin-top: 40px;
-            padding: 16px 32px 16px 32px; 
+            padding: 18px 32px 18px 32px; 
             border-color: transparent;
             outline: none;
             border-radius: 50px;
@@ -30,7 +30,34 @@
             -ms-border-radius: 50px;
             -o-border-radius: 50px;
       }
+  }
 
-      
+  @media(min-width: 1114px) {
+      max-width: 800px;
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 60px;
+      padding-right: 60px;
+      transform: translateY(128px);
+      -webkit-transform: translateY(128px);
+      -moz-transform: translateY(128px);
+      -ms-transform: translateY(128px);
+      -o-transform: translateY(128px);
+
+      .signIn_section__container {
+        text-align: center;
+      }
+
+      .singIn_form { 
+        @include flex-row;
+        label {
+          flex-basis: 65%;
+        }
+
+        .start_btn {
+          padding: 16px 32px 16px 32px;
+        }
+      }
   }
 }

@@ -127,6 +127,8 @@ header .header_link:hover {
     justify-content: space-between; }
     .features_section article:nth-of-type(6) .image_container {
       flex-basis: 75%; }
+  .features_section .features_section__article:last-of-type {
+    padding-bottom: 100px; }
   .features_section .illustration_article {
     display: flex;
     flex-direction: column;
@@ -187,6 +189,14 @@ header .header_link:hover {
         display: block; }
       .team_section .team_section__article .profile_container span.team_about {
         line-height: 32px; }
+  @media (min-width: 1114px) {
+    .team_section .team_section__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 32px; }
+      .team_section .team_section__container .team_section__article {
+        padding-top: 32px; } }
 
 .signIn_section {
   background-color: #202a3c;
@@ -205,7 +215,7 @@ header .header_link:hover {
     font-weight: 700;
     font-size: 14px;
     margin-top: 40px;
-    padding: 16px 32px 16px 32px;
+    padding: 18px 32px 18px 32px;
     border-color: transparent;
     outline: none;
     border-radius: 50px;
@@ -213,39 +223,77 @@ header .header_link:hover {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px; }
+  @media (min-width: 1114px) {
+    .signIn_section {
+      max-width: 800px;
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 60px;
+      padding-right: 60px;
+      transform: translateY(128px);
+      -webkit-transform: translateY(128px);
+      -moz-transform: translateY(128px);
+      -ms-transform: translateY(128px);
+      -o-transform: translateY(128px); }
+      .signIn_section .signIn_section__container {
+        text-align: center; }
+      .signIn_section .singIn_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .signIn_section .singIn_form label {
+          flex-basis: 65%; }
+        .signIn_section .singIn_form .start_btn {
+          padding: 16px 32px 16px 32px; } }
 
-footer .footer_heading {
-  margin-bottom: 40px; }
-
-footer .footer_container {
-  padding: 100px 32px 32px 32px; }
-
-footer .footer_article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  column-gap: 32px; }
-  footer .footer_article .image_container {
-    margin-top: 4px; }
-  footer .footer_article .footer_photograph {
-    flex-basis: 90%; }
-
-footer .phone_contact {
-  margin-top: 32px;
-  margin-bottom: 32px; }
-  footer .phone_contact svg {
+footer {
+  background-color: #0b1523; }
+  footer .footer_container {
+    padding: 100px 32px 32px 32px; }
+  footer .footer_heading {
+    margin-bottom: 40px; }
+  footer .footer_article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 32px; }
+    footer .footer_article .image_container {
+      margin-top: 4px; }
+    footer .footer_article .footer_photograph {
+      flex-basis: 90%; }
+  footer .phone_contact {
+    margin-top: 32px;
+    margin-bottom: 32px; }
+    footer .phone_contact svg {
+      margin-right: 16px; }
+  footer .email_contact svg {
     margin-right: 16px; }
-
-footer .email_contact svg {
-  margin-right: 16px; }
-
-footer .footer_nav {
-  margin-top: 80px; }
-
-footer .footer_list {
-  margin-bottom: 16px; }
-  footer .footer_list a {
-    color: white; }
-
-footer .footer_nav__list:last-of-type {
-  margin-top: 50px; }
+  footer .footer_nav {
+    margin-top: 80px; }
+  footer .footer_list {
+    margin-bottom: 16px; }
+    footer .footer_list a {
+      color: white; }
+  footer .footer_nav__list:last-of-type {
+    margin-top: 50px; }
+  @media (min-width: 1114px) {
+    footer .footer_container {
+      padding-top: 250px;
+      padding-bottom: 66px; }
+    footer .contents_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    footer .footer_article {
+      max-width: 350px; }
+    footer .phone_contact {
+      margin-top: 0; }
+    footer .footer_nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 200px;
+      margin-top: 0; }
+    footer .footer_nav__list, footer .footer_nav__list:last-of-type {
+      margin-top: 0; } }

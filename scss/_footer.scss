@@ -1,11 +1,13 @@
 @import "mixins";
 
 footer {
-    .footer_heading {
-        margin-bottom: 40px;
-    }
+    background-color: hsl(216, 53%, 9%);
     .footer_container {
         padding: 100px 32px 32px 32px;
+    }
+
+    .footer_heading {
+        margin-bottom: 40px;
     }
 
     .footer_article {
@@ -19,7 +21,6 @@ footer {
         .footer_photograph {
             flex-basis: 90%;
         }
-
     }
     .phone_contact {
         margin-top: 32px;
@@ -41,12 +42,41 @@ footer {
 
     .footer_list {
         a {
-            color: hsl(0, 0%, 100%);;
+            color: hsl(0, 0%, 100%);
         }
         margin-bottom: 16px;
     }
 
     .footer_nav__list:last-of-type {
         margin-top: 50px;
+    }
+
+    @media (min-width: 1114px) {
+        .footer_container {
+            padding-top: 250px;
+            padding-bottom: 66px;
+        }
+
+        .contents_container {
+            @include flex-row;
+        }
+
+        .footer_article {
+            max-width: 350px;
+        }
+
+        .phone_contact {
+            margin-top: 0;
+        }
+
+        .footer_nav {
+            @include flex-row;
+            width: 200px;
+            margin-top: 0;
+        }
+
+        .footer_nav__list, .footer_nav__list:last-of-type {
+            margin-top: 0;
+        } 
     }
 }
