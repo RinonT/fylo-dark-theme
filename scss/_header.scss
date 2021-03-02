@@ -4,6 +4,15 @@ header {
     .header_container {
         padding: 32px;
     }
+
+    .header_heading {
+        max-width: max-content;
+    }
+    .logo img {
+        width: 70%;
+        margin-top: 8px;
+    }
+
     .header_container, .header_nav__list {
         @include flex-row;
         flex-wrap: wrap;
@@ -11,17 +20,18 @@ header {
 
     .header_nav {
         flex-basis: 50%;
-    }
 
-    .header_link {
+        .header_link {
         color: hsl(0, 0%, 100%);
         opacity: .5;
-    }
-
+        }
+    
     .header_link:hover {
         text-decoration: underline;
         opacity: 1;
     }
+    }
+
 
     @media(min-width: 1114px) {
         .header_container {

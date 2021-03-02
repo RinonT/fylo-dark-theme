@@ -55,10 +55,11 @@
         .features_section__container {
             display: grid;
             grid-template-columns: auto auto;
-            grid-template-areas: "article1 article1"
-                                 "article2 article3"
-                                 "article4 article5"
-                                 "article6 article6";
+            grid-template-areas:
+                "article1 article1"
+                "article2 article3"
+                "article4 article5"
+                "article6 article6";
             column-gap: 10%;
         }
 
@@ -84,15 +85,15 @@
 
         article:nth-of-type(6) {
             grid-area: article6;
-            @include flex-row; 
+            @include flex-row;
 
             .image_container {
                 flex-basis: 75%;
             }
         }
 
-        .features_section__article:last-of-type { 
-            padding-bottom: 100px
+        .features_section__article:last-of-type {
+            padding-bottom: 100px;
         }
         .illustration_article {
             @include flex-column;
@@ -133,7 +134,7 @@
     margin-top: 40px;
     padding: 16px 65px 16px 65px;
     color: hsl(0, 0%, 100%);
-    background-color: hsl(198, 60%, 50%);
+    background: linear-gradient(138.1deg, #63e1d9 -49.34%, #34a0cd 100%);
     border-color: transparent;
     outline: none;
     border-radius: 50px;

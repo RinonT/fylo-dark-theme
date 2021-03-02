@@ -50,6 +50,13 @@ img {
 header .header_container {
   padding: 32px; }
 
+header .header_heading {
+  max-width: max-content; }
+
+header .logo img {
+  width: 70%;
+  margin-top: 8px; }
+
 header .header_container, header .header_nav__list {
   display: flex;
   flex-direction: row;
@@ -58,14 +65,12 @@ header .header_container, header .header_nav__list {
 
 header .header_nav {
   flex-basis: 50%; }
-
-header .header_link {
-  color: white;
-  opacity: .5; }
-
-header .header_link:hover {
-  text-decoration: underline;
-  opacity: 1; }
+  header .header_nav .header_link {
+    color: white;
+    opacity: .5; }
+  header .header_nav .header_link:hover {
+    text-decoration: underline;
+    opacity: 1; }
 
 @media (min-width: 1114px) {
   header .header_container {
@@ -155,7 +160,7 @@ header .header_link:hover {
   margin-top: 40px;
   padding: 16px 65px 16px 65px;
   color: white;
-  background-color: #339ecc;
+  background: linear-gradient(138.1deg, #63e1d9 -49.34%, #34a0cd 100%);
   border-color: transparent;
   outline: none;
   border-radius: 50px;
