@@ -1,5 +1,6 @@
 html,
-body {
+body,
+a {
   font-family: 'Open Sans', sans-serif;
   font-size: normal;
   font-style: normal;
@@ -276,6 +277,19 @@ footer {
     margin-right: 16px; }
   footer .footer_nav {
     margin-top: 80px; }
+  footer .social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer .social_media li {
+      margin-left: 16px; }
+  footer .fab.fa-facebook {
+    width: 50px;
+    display: block; }
+  footer .fa-twitter-square:before {
+    content: "\f081"; }
+  footer .fa-instagram-square:before {
+    content: "\e055"; }
   footer .footer_list {
     margin-bottom: 16px; }
     footer .footer_list a {
@@ -300,5 +314,6 @@ footer {
       justify-content: space-between;
       width: 200px;
       margin-top: 0; }
-    footer .footer_nav__list, footer .footer_nav__list:last-of-type {
+    footer .footer_nav__list,
+    footer .footer_nav__list:last-of-type {
       margin-top: 0; } }

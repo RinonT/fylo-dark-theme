@@ -40,6 +40,26 @@ footer {
         margin-top: 80px;
     }
 
+    .social_media {
+        @include flex-row;
+
+        li {
+            margin-left: 16px;
+        }
+    }
+    .fab.fa-facebook {
+        width: 50px;
+        display: block;
+    }
+
+    .fa-twitter-square:before {
+        content: "\f081";
+    }
+
+    .fa-instagram-square:before {
+        content: "\e055";
+    }
+
     .footer_list {
         a {
             color: hsl(0, 0%, 100%);
@@ -75,8 +95,9 @@ footer {
             margin-top: 0;
         }
 
-        .footer_nav__list, .footer_nav__list:last-of-type {
+        .footer_nav__list,
+        .footer_nav__list:last-of-type {
             margin-top: 0;
-        } 
+        }
     }
 }
